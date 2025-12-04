@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shafiul Islam – Architecture Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Architecture portfolio of Shafiul Islam showcasing academic, professional, and competition projects with a focus on computational design and environmental performance." />
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: #f5f5f5;
+      color: #111;
+      min-height: 100vh;
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .page {
+      max-width: 1200px;
+      width: 100%;
+      margin: 24px auto;
+      padding: 16px;
+    }
+
+    header {
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 1.6rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin-top: 6px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .embed-wrapper {
+      position: relative;
+      width: 100%;
+      padding-top: max(60%, 326px);
+      height: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      background: #000;
+    }
+
+    .embed-wrapper iframe {
+      position: absolute;
+      border: none;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+    }
+
+    footer {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #777;
+    }
+
+    a {
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <h1>Shafiul Islam – Architecture Portfolio</h1>
+      <p>
+        A curated selection of academic, professional, and competition projects,
+        featuring computational design, generative methods, and
+        performance-driven architecture.
+      </p>
+    </header>
+
+    <div class="embed-wrapper">
+      <iframe
+        allow="clipboard-write"
+        sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms"
+        allowfullscreen="true"
+        src="https://e.issuu.com/embed.html?d=shafiul_portfolio_architecture&u=shafi_arch">
+      </iframe>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Shafiul Islam · Hosted on GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
